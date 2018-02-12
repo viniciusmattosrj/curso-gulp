@@ -8,3 +8,7 @@ gulp.task('rolo-compressor', function(){
 	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('prod/assets/css/'));
 });
+
+gulp.task('escutador', function(){
+	gulp.watch('dev/assets/css/style.css',['rolo-compressor']);
+});
