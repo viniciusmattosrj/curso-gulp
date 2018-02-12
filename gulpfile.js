@@ -10,21 +10,20 @@ gulp.task('rolo-compressor', function(){
 	.pipe(gulp.dest('prod/assets/css/'));
 });
 
-
 gulp.task('sass', function(){
 	return gulp.src('dev/assets/style.scss')
 	.pipe(sass().on('error', sass.logError))
 	.pipe(gulp.dest('dev/assets/css'));
 });
 
-/* Tarefa que monitora as alteraçẽos */
+/* Tarefa que monitora as alterações */
 gulp.task('prod', function(){
 	gulp.watch('dev/assets/sass/*.scss',['sass']);
 	gulp.watch('dev/assets/css/style.css',['rolo-compressor']);
 });
 
 
-/* Tarefa que monitora as alteraçẽos (escutador) */
+/* Tarefa que monitora as alterações (escutador) */
 gulp.task('escutador', function(){
 	gulp.watch('dev/assets/css/style.css',['rolo-compressor']);
 });
