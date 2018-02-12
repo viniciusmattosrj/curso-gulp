@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var rename = require('gulp-rename');
 var cssmin = require('gulp-cssmin');
+var sass = require('gulp-sass');
 
 gulp.task('rolo-compressor', function(){
 	gulp.src('dev/assets/css/style.css')
@@ -9,6 +10,21 @@ gulp.task('rolo-compressor', function(){
 	.pipe(gulp.dest('prod/assets/css/'));
 });
 
+
+gulp.task('sass', function(){
+	return gulp.src('dev/assets/style.scss')
+	.pipe(sass().on('error', sass.logError))
+	.pipe(gulp.dest('dev/assets/css'));
+});
+
+/* Tarefa que monitora as alteraçẽos */
+gulp.task('prod', function(){
+	gulp.watch('dev/assets/sass/*.scss',['sass']);
+	gulp.watch('dev/assets/css/style.css',['rolo-compressor']);
+});
+
+
+/* Tarefa que monitora as alteraçẽos (escutador) */
 gulp.task('escutador', function(){
 	gulp.watch('dev/assets/css/style.css',['rolo-compressor']);
 });
