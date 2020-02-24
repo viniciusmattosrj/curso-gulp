@@ -1,7 +1,7 @@
-# Gulp
+# Sobre a Projeto
 
-Gulp - Leonardo Nascimento - https://www.udemy.com/aprendendo-gulp-basico/learn/v4/t/lecture/8546532?start=0
-
+Curso de Gulp.
+- <a href="https://www.udemy.com/aprendendo-gulp-basico/learn/v4/t/lecture/8546532?start=0">Curso Gulp</a> - Leonardo Nascimento
 
 ## Instalação
 
