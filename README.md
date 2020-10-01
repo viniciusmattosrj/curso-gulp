@@ -1,19 +1,26 @@
-# Sobre a Projeto
+## Requerimentos
 
-Curso de Gulp.
-- <a href="https://www.udemy.com/aprendendo-gulp-basico/learn/v4/t/lecture/8546532?start=0">Curso Gulp</a> - Leonardo Nascimento
+- Node &ge; 10.0
+- Npm
 
-## Instalação
+### Tecnologias Utilizadas
 
-Só realizar o git clone do projeto e ser feliz
-```bash
-git clone git@github.com:viniciusmattosrj/curso-gulp.git
-```
+* Docker 
+* Gulp 
+* Code style: ESLint
 
-## Contribuições
-Caso identifique pontos
-que possam ser aprimorados envie o seu PR. ;-)
+### Sobre
 
+Este é um projeto de estudo para entender mais sobre o gulp.
 
-## License
+- <a href="https://www.udemy.com/join/login-popup/?next=/course/aprendendo-gulp-basico/learn/lecture/8546532%3Fstart%3D0">Curso Gulp</a> - Leonardo Nascimento 
+
+### Instalação
+
+Para instalação verifique **[installation documentation](docs/installation.md)**.
+
+### Contribuições
+Feedback são sempre bem vindos, então caso identifique pontos que possam ser aprimorados envie o seu PR. ;-)
+
+### License
 [MIT](https://choosealicense.com/licenses/mit/)
