@@ -1,0 +1,26 @@
+{
+  "name": "curso-gulp",
+  "version": "1.0.0",
+  "description": "- Node &ge; 10.0 - Npm",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusmattosrj/curso-gulp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciusmattosrj/curso-gulp/issues"
+  },
+  "homepage": "https://github.com/viniciusmattosrj/curso-gulp#readme"
+}
